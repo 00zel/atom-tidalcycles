@@ -1,0 +1,51 @@
+d1 $ stack [
+(slow 4 $ sound "jtrap:3 jtrap:3*2 jtrap:3 jtrap:2" # gain "0.9"),
+(sound "tropical tropical tropical tropical" # up (run "13")),
+(sound "tropical*8")
+]
+
+d1 $ stack [
+(slow 4 $ sound "jtrap:3 jtrap:3*2 jtrap:3 jtrap:2"  #up(run"16")),
+(sound "tropical tropical tropical tropical" # up (run "16")),
+(sound "tropical*8" #up (run "16")),
+(s "bitz bitz*4 bitz bitz" #up (run "16")),
+(s "bitz:3, bitz:4*8")
+]
+
+d1 $ stack [
+(slow 2 $ sound "jtrap:3 jtrap:3*2 jtrap:3 jtrap:2"  #up(run"30")),
+(fast 2 $ sound "tropical tropical tropical tropical" # up (run "30")),
+(fast 2 $ sound "tropical*8" #up (run "30")),
+(s "bitz bitz*4 bitz bitz" #up (run "30")),
+(s "bitz:3, bitz:4*8"),
+(sound "tink:3" #up (run "30")),
+(sound "tink tink*2 tink tink" #up (run "30")),
+(sound "tink:2 tink:2*4" # up (run "30"))
+]
+
+d1 $ stack [
+(slow 2 $ sound "jtrap:3 jtrap:3*2 jtrap:3 jtrap:2"  #up(run"30")),
+(fast 2 $ sound "tropical tropical tropical tropical" # up (run "30")),
+(fast 2 $ sound "tropical*8" #up (run "30")),
+(s "bitz bitz*4 bitz bitz" #up (run "30")),
+(s "bitz:3, bitz:4*8"),
+(sound "tink:3" #up (run "30")),
+(sound "tink tink*2 tink tink" #up (run "30")),
+(sound "tink:2 tink:2*4" # up (run "30")),
+(sound "singulars:1 singulars:2 singulars:3 singulars:3" # up (run "13")),
+(sound "singulars:4*8")
+]
+
+hush
+
+cps(-1)
+
+d1 $ stack [
+(s "bitz bitz*4 bitz bitz" #up (run "20")),
+(s "[bitz ~] bitz:4*8"),
+(sound "tink:3" #up (run "20")),
+(sound "tink tink*2 ~ tink" #up (run "20")),
+(sound "tink:2 tink:2*4" # up (run "20"))
+]
+
+cps 0.6

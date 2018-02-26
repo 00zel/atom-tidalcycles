@@ -1,0 +1,15 @@
+d1 $ sound "[tropical:7] [sophie:9 tropical:7 tropical:3 sophie:9]"
+d2 $ rev (sound "[tropical:7] [sophie:9 tropical:7 tropical:3 sophie:9]")
+d3 $ sound "[tropical:3]*3"
+d1 silence
+d2 silence
+d3 silence
+d4 silence
+d4 $ rev (sound "[sophie:9 sophie:9 sophie:9 sophie:9 sophie:9 sophie:9, deeptech*2] <deeptech tropical:3>")
+d5 $ sound "[movie1:3]/6"
+hush
+
+//
+"[ksh:2]/5" # crush "1.2"
+end on "[ksh:3]/6"
+movie1:3
